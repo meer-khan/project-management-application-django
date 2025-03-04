@@ -1,5 +1,3 @@
-# project-management-application-djnago
-
 # **Project Management API** 🛠️🚀
 
 ## **Overview**
