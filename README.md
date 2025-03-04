@@ -158,10 +158,9 @@ Access Django Admin at **[http://127.0.0.1:8000/admin/]()** using the superuser 
 
 ## **📌 Logging**
 
-Logs are stored in **logs/app.log** and include:
-✅ API requests
-✅ Authentication logs
-✅ Errors and warnings
+✅ API requests  
+✅ Authentication logs  
+✅ Errors and warnings  
 
 ## **📌 License**
 
