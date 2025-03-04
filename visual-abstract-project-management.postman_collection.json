@@ -1,0 +1,562 @@
+{
+	"info": {
+		"_postman_id": "84463aff-715a-40f8-8e5b-4625c37aa80a",
+		"name": "visual-abstract-project-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18161382"
+	},
+	"item": [
+		{
+			"name": "user-management",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "wkf3Z75liTWpnFMgjc5TM3RfwX3MZ4n2rZ8l2vjFRjVRnMFPI0yNfllLP8Sp87z0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "ShahmeerKhan",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "shahmirkhan519@outlook.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "124",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-registration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "wkf3Z75liTWpnFMgjc5TM3RfwX3MZ4n2rZ8l2vjFRjVRnMFPI0yNfllLP8Sp87z0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shahmirkhan519@outlook.com",
+									"type": "text"
+								},
+								{
+									"key": "verification_code",
+									"value": "d776dc13-ba98-4e39-9a00-fe08fde4fe40",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/verify/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"verify",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "89tqme1WIVwQsO7wscxKWwG2o5O2JsYjuWjCiVPmoRU5whiUtsDBkNPIxxvpmTcl",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "ShahmeerKhan2212",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "124",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "ShahmeerKhan",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "124",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/login/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "csrftoken=vL5cneqSEv5bUsswaQK1pGbmMpwkmPOH; sessionid=yyc8bpz4yoo0e8g9cyg1270bhzn56xuj",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/profile",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "96ryXyYKe6RoL5NkSF2vP22W03ayS8au",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/users/logout/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"logout",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "project-management",
+			"item": [
+				{
+					"name": "create-project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "qGjb8sgWghxDpDRQP4x2n3HlksGUIS8721AiCqwc7Q95hohwjTp214soiZDMpkI5",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "csrftoken=qGjb8sgWghxDpDRQP4x2n3HlksGUIS8721AiCqwc7Q95hohwjTp214soiZDMpkI5; sessionid=yyc8bpz4yoo0e8g9cyg1270bhzn56xuj",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Project1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test Project",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-projects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "csrftoken=qGjb8sgWghxDpDRQP4x2n3HlksGUIS8721AiCqwc7Q95hohwjTp214soiZDMpkI5; sessionid=myz4wi7cs9yal4w46o4it5av0u58nzj8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "project-by-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-project",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "89tqme1WIVwQsO7wscxKWwG2o5O2JsYjuWjCiVPmoRU5whiUtsDBkNPIxxvpmTcl",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "TestProject-4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-project",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "fJMiYEDURDON8vvhJTDZky21uGhJnfZux6eJkSsDYDd9RqK2X0GkyRzp33Dxi3O9",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/1/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set-project-member",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "G4jIF4evFmY1onwDfOfJW5XNnv6ItiQXitMQQsH5DsRC4WnqhyXojOeUt0f8wPTS",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "role",
+									"value": "editor",
+									"type": "text"
+								},
+								{
+									"key": "user",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "project",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/1/members/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"1",
+								"members",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRFToken",
+								"value": "G4jIF4evFmY1onwDfOfJW5XNnv6ItiQXitMQQsH5DsRC4WnqhyXojOeUt0f8wPTS",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "project",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "text",
+									"value": "A good project",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/1/comments/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"1",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-project-comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/1/comments/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"1",
+								"comments",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "csrf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/csrf/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"csrf",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
