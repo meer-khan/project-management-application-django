@@ -4,7 +4,7 @@
 
 This is a **Django REST Framework (DRF)**-based API for managing **projects, users, project members, and comments**. It supports:
 
-✔ **User Registration & Authentication**
+✔ **User Registration & Authentication**  
 ✔ **Project Creation & Management**  
 ✔ **Role-Based Access Control (Owner, Editor, Reader)**  
 ✔ **Commenting on Projects**  
