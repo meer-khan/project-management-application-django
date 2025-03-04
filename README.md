@@ -22,7 +22,7 @@ This is a **Django REST Framework (DRF)**-based API for managing **projects, use
 - Added Email verification system by using Python's default SMTPLib.
 - **.env.dist** has all the variables/secrets required to run the application.
 - **python-version** file has Python version which is 3.11
-- **IMPORTANT:** Attached the Postman collection with name *visual-abstract-project-management.postman_collection.json* in root directory. Just import this collection in Postman and use all the routes. 
+- **IMPORTANT:** Attached the Postman collection *[visual-abstract-project-management.postman_collection.json](https://github.com/meer-khan/project-management-application-django/blob/main/visual-abstract-project-management.postman_collection.json)* in root directory. Just import this collection in Postman and use all the routes. 
 
 ---
 
