@@ -59,12 +59,12 @@ Then, install dependencies using Pipenv:
 ```pipenv install```
 
 
-### **3️⃣ Activate the Virtual Environment**
+### **3️⃣ Activate the Virtual Environment** - Activate the environment after writing .env
 
 ```pipenv shell```
 
 
-### **4️⃣ Set Up the Database**
+### **4️⃣ Set Up the Database** - Activate the environment after writing .env
 
 Modify **`.env` file** (check .env.dist) to configure your env:
 
