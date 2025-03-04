@@ -16,6 +16,20 @@ This is a **Django REST Framework (DRF)**-based API for managing **projects, use
 
 ---
 
+## Note related to improvements. 
+Completed the initial implementation of the authentication and project management APIs, along with the corresponding test cases. While the core functionality is in place.   
+
+I worked on Django a few years ago, this project helped me to refresh my knowledge of this framework, I know there are still a lot of improvements I can make, and covering the whole framework, I can assure you that with proper time, I will come back on track with Django again. I just need a bit of time and proper deliverables to enhance and refresh my understanding of this framework.  
+
+There are several areas that can be further improved for robustness, maintainability, and efficiency. Due to time constraints and the current workload, I have prioritized delivering a working solution, but I’d like to highlight potential areas for future enhancements.
+
+- Exception Handling & Error Responses  
+- Improved Logging & Monitoring
+- Enhancing API Responses
+- Optimizing Database Queries & Performance
+  
+---
+
 ## Note and Assumptions: 
 - Used **pipenv** as packagemanager.
 - Used SQLite as a  database (As it comes with Django by default).
