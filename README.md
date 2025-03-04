@@ -14,13 +14,24 @@ This is a **Django REST Framework (DRF)**-based API for managing **projects, use
 
 ---
 
+## Note and Assumptions: 
+- Used **pipenv** as packagemanager.
+- Used SQLite as a  database (As it comes with Django by default).
+- Added Email verification system by using Python's default SMTPLib.
+- **.env.dist** has all the variables/secrets required to run the application.
+- **python-version** file has Python version which is 3.11
+- **IMPORTANT:** Attached the Postman collection with name *visual-abstract-project-management.postman_collection.json* in root directory. Just import this collection in Postman and use all the routes. 
+
+---
+
 ## **📌 Tech Stack**
 
 - **Backend**: Django, Django REST Framework
-- **Database**: PostgreSQL (or SQLite for local development)
+- **Database**: SQLite
 - **Authentication**: Django Authentication
+- **Email verification**: SMTPLib
 - **Admin Panel**: Django Admin
-- **Testing**: Pytest, Django TestCase
+- **Testing**: Django TestCase
 - **Logging**: Python `logging` module
 
 ---
